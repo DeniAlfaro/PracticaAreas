@@ -17,53 +17,19 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Column="0" Grid.Row="0" Margin="10,10,10,2" FontFamily="calibri" FontSize="21">Áreas de Figuras geométricas</TextBlock>
-        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,10,10,10">Rectángulo:</TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="0" Margin="10,5,10,5">base:</TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="1" Margin="10,5,10,5">altura:</TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="3" Margin="10,5,10,5">área:</TextBlock>
-        <TextBox Name="base1" Grid.Row="3" Grid.Column="0" Margin="10,5,70,5">0</TextBox>
-        <TextBox Name="altura1" Grid.Row="3" Grid.Column="1" Margin="10,5,70,5">0</TextBox>
-        <Button Grid.Row="3" Grid.Column="2" Margin="20,5,20,5" Click="Button_Click_1">Calcular</Button>
-        <TextBlock Name="area1" Grid.Row="3" Grid.Column="3" Margin="10,5,10,5">0.0</TextBlock>
-        <TextBlock Grid.Row="4" Grid.Column="0" Margin="10,10,10,10">Triángulo:</TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="0" Margin="10,5,10,5">base:</TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="1" Margin="10,5,10,5">altura:</TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="3" Margin="10,5,10,5">área:</TextBlock>
-        <TextBox Name="base2" Grid.Row="6" Grid.Column="0" Margin="10,5,70,5">0</TextBox>
-        <TextBox Name="altura2" Grid.Row="6" Grid.Column="1" Margin="10,5,70,5">0</TextBox>
-        <Button Grid.Row="6" Grid.Column="2" Margin="20,5,20,5" Click="Button_Click_2">Calcular</Button>
-        <TextBlock Name="area2" Grid.Row="6" Grid.Column="3" Margin="10,5,10,5">0.0</TextBlock>
-        <TextBlock Grid.Row="7" Grid.Column="0" Margin="10,10,10,10">Círculo:</TextBlock>
-        <TextBlock Grid.Row="8" Grid.Column="0" Margin="10,5,10,5">radio:</TextBlock>
-        <TextBlock Grid.Row="8" Grid.Column="3" Margin="10,5,10,5">área:</TextBlock>
-        <TextBox Name="radio" Grid.Row="9" Grid.Column="0" Margin="10,5,70,5">0</TextBox>
-        <Button Grid.Row="9" Grid.Column="2" Margin="20,5,20,5" Click="Button_Click_3">Calcular</Button>
-        <TextBlock Name="area3" Grid.Row="9" Grid.Column="3" Margin="10,5,10,5">0.0</TextBlock>
-        <TextBlock Grid.Row="10" Grid.Column="0" Margin="10,10,10,10">Trapecio:</TextBlock>
-        <TextBlock Grid.Row="11" Grid.Column="0" Margin="10,5,10,5">base mayor:</TextBlock>
-        <TextBlock Grid.Row="11" Grid.Column="1" Margin="10,5,10,5">base menor:</TextBlock>
-        <TextBlock Grid.Row="11" Grid.Column="3" Margin="10,5,10,5">área:</TextBlock>
-        <TextBox Name="basemayor" Grid.Row="12" Grid.Column="0" Margin="10,5,70,5">0</TextBox>
-        <TextBox Name="basemenor" Grid.Row="12" Grid.Column="1" Margin="10,5,70,5">0</TextBox>
-        <Button Grid.Row="12" Grid.Column="2" Margin="20,5,20,5" Click="Button_Click_4">Calcular</Button>
-        <TextBlock Name="area4" Grid.Row="12" Grid.Column="3" Margin="10,5,10,5">0.0</TextBlock>
-        <TextBlock Grid.Row="13" Grid.Column="0" Margin="10,5,10,5">altura:</TextBlock>
-        <TextBox Name="altura3" Grid.Row="14" Grid.Column="0" Margin="10,5,70,5">0</TextBox>
-        
+        <TextBlock Grid.Row="1" Grid.Column="3" Margin="10,5,10,5">área:</TextBlock>
+        <Button Grid.Row="2" Grid.Column="2" Margin="20,5,20,5" Click="Button_Click_5">Calcular</Button>
+        <TextBlock Name="lblResultadoArea" Grid.Row="2" Grid.Column="3" Margin="10,5,10,5">0.0</TextBlock>
+
+        <ComboBox Name="cbTipoFigura" Grid.Column="0" Grid.Row="1" SelectionChanged="cbTipoFigura_SelectionChanged">
+            <ComboBoxItem>Cuadrado</ComboBoxItem>
+            <ComboBoxItem>Triangulo</ComboBoxItem>
+            <ComboBoxItem>Circulo</ComboBoxItem>
+            <ComboBoxItem>Trapecio</ComboBoxItem>
+        </ComboBox>
+        <StackPanel Name="panelConfiguracion" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"></StackPanel>
     </Grid>
 </Window>
