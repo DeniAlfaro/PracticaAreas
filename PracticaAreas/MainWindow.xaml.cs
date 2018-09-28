@@ -28,10 +28,7 @@ namespace PracticaAreas
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            /*float baser = float.Parse(base1.Text);
-            float alturar = float.Parse(altura1.Text);
-            float areatotal = baser * alturar;
-            area1.Text = areatotal.ToString();*/
+            
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -86,11 +83,20 @@ namespace PracticaAreas
         {
             switch (cbTipoFigura.SelectedIndex)
             {
-                case 0: //cuadrado
+                case 0:
+                    var controlAreaRectangulo = (ControlAreaRectangulo)panelConfiguracion.Children[0];
+                    float baser = float.Parse(controlAreaRectangulo.base1.Text);
+                    float alturar = float.Parse(controlAreaRectangulo.altura1.Text);
+                    area = baser * alturar;
+                    //cuadrado
                     break;
                 case 1: //triangulo
                     break;
-                case 2: //circulo
+                case 2:
+                    var controlAreaCirculo = (ControlAreaCirculo)panelConfiguracion.Children[0];
+                    float radio = float.Parse(controlAreaCirculo.radio.Text);
+                    area = 3.14159f * radio * radio;
+                    //circulo
                     break;
                 case 3: //trapecio
                     break;
