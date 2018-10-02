@@ -19,9 +19,9 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="0">base mayor:</TextBlock>
         <TextBlock Grid.Row="0" Grid.Column="1">base menor:</TextBlock>
-        <TextBox Name="basemayor" Grid.Row="1" Grid.Column="0">0</TextBox>
-        <TextBox Name="basemenor" Grid.Row="1" Grid.Column="1">0</TextBox>
+        <TextBox Name="basemayor" Grid.Row="1" Grid.Column="0"></TextBox>
+        <TextBox Name="basemenor" Grid.Row="1" Grid.Column="1"></TextBox>
         <TextBlock Grid.Row="2" Grid.Column="0">altura:</TextBlock>
-        <TextBox Name="altura3" Grid.Row="3" Grid.Column="0">0</TextBox>
+        <TextBox Name="altura3" Grid.Row="3" Grid.Column="0"></TextBox>
     </Grid>
 </UserControl>

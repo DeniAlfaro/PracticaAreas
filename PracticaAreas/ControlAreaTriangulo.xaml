@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="0">base:</TextBlock>
         <TextBlock Grid.Row="0" Grid.Column="1">altura:</TextBlock>
-        <TextBox Name="base2" Grid.Row="1" Grid.Column="0">0</TextBox>
-        <TextBox Name="altura2" Grid.Row="1" Grid.Column="1">0</TextBox>
+        <TextBox Name="base2" Grid.Row="1" Grid.Column="0"></TextBox>
+        <TextBox Name="altura2" Grid.Row="1" Grid.Column="1"></TextBox>
     </Grid>
 </UserControl>

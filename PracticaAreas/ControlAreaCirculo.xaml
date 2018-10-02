@@ -16,6 +16,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="0">radio:</TextBlock>
-        <TextBox Name="radio" Grid.Row="1" Grid.Column="0">0</TextBox>
+        <TextBox Name="radio" Grid.Row="1" Grid.Column="0"></TextBox>
     </Grid>
 </UserControl>
